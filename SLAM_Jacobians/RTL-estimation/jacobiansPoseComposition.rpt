@@ -1,0 +1,552 @@
+
+
+================================================================
+== Report Version
+================================================================
+* Tool:          AutoESL - High-Level Synthesis System (C, C++, SystemC)
+* Version:       2011.1
+* Build date:    Tue Mar 08 23:58:07 PM 2011
+* Copyright (C): 2011 Xilinx Inc. All rights reserved.
+
+
+================================================================
+== General Information
+================================================================
+* Project:  Jacobians
+* Solution: solution1
+* Date:     Fri Oct 21 14:21:27 2011
+
+
+
+================================================================
+== User Assignments
+================================================================
+* Target platform:          DefaultPlatform ( virtex6 virtex6_fpv5 )
+* Target device:            xc6vlx240t:ff1156:-1
+* Model name:               jacobiansPoseComposition
+* Target clock period (ns): 10.00
+* Clock uncertainty (ns):   1.25
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Summary of timing analysis: 
+    * Estimated clock period (ns): 8.40
++ Summary of overall latency (clock cycles): 
+    * Best-case latency:    77
+    * Average-case latency: 77
+    * Worst-case latency:   77
+
+
+================================================================
+== Area Estimates
+================================================================
+* Summary: 
++---+-------------+-------+------+-------+
+| ID|         Name| DSP48E|    FF|    LUT|
++---+-------------+-------+------+-------+
+|  0|    Component|    128|  7472|  10864|
+|  1|   Expression|      -|     0|     64|
+|  2|         FIFO|      -|     -|      -|
+|  3|       Memory|      -|     -|      -|
+|  4|  Multiplexer|      -|     -|   4846|
+|  5|     Register|      -|  3397|      -|
++---+-------------+-------+------+-------+
+|  -|        Total|    128| 10869|  15774|
++---+-------------+-------+------+-------+
+
+* Utilization: 
+(Target device: xc6vlx240t:ff1156:-1)
++---+--------+-------+----------+----------------+
+| ID|    Name|   Used| Available| Utilization (%)|
++---+--------+-------+----------+----------------+
+|  0|    BRAM|      0|       832|               0|
+|  1|  DSP48E|    128|       768|              16|
+|  2|      FF|  10869|    301440|               3|
+|  3|     LUT|  15774|    150720|              10|
+|  4|   SLICE|      0|     37680|               0|
++---+--------+-------+----------+----------------+
+
++ Details: 
+    * Component: 
+    +---+-------------------------------------------------------------------------------------------------------------+-------+-----+-----+
+    | ID|                                                                                                         Name| DSP48E|   FF|  LUT|
+    +---+-------------------------------------------------------------------------------------------------------------+-------+-----+-----+
+    |  0|  jacobiansPoseComposition_grp_fu_555_ACMP_faddfsub_1_U (jacobiansPoseComposition_grp_fu_555_ACMP_faddfsub_1)|      2|  181|  259|
+    |  1|  jacobiansPoseComposition_grp_fu_560_ACMP_faddfsub_2_U (jacobiansPoseComposition_grp_fu_560_ACMP_faddfsub_2)|      2|  181|  259|
+    |  2|  jacobiansPoseComposition_grp_fu_566_ACMP_faddfsub_3_U (jacobiansPoseComposition_grp_fu_566_ACMP_faddfsub_3)|      2|  181|  259|
+    |  3|  jacobiansPoseComposition_grp_fu_571_ACMP_faddfsub_4_U (jacobiansPoseComposition_grp_fu_571_ACMP_faddfsub_4)|      2|  181|  259|
+    |  4|  jacobiansPoseComposition_grp_fu_583_ACMP_faddfsub_5_U (jacobiansPoseComposition_grp_fu_583_ACMP_faddfsub_5)|      2|  181|  259|
+    |  5|  jacobiansPoseComposition_grp_fu_588_ACMP_faddfsub_6_U (jacobiansPoseComposition_grp_fu_588_ACMP_faddfsub_6)|      2|  181|  259|
+    |  6|          jacobiansPoseComposition_grp_fu_592_ACMP_fadd_7_U (jacobiansPoseComposition_grp_fu_592_ACMP_fadd_7)|      2|  181|  259|
+    |  7|          jacobiansPoseComposition_grp_fu_596_ACMP_fadd_8_U (jacobiansPoseComposition_grp_fu_596_ACMP_fadd_8)|      2|  181|  259|
+    |  8|          jacobiansPoseComposition_grp_fu_600_ACMP_fadd_9_U (jacobiansPoseComposition_grp_fu_600_ACMP_fadd_9)|      2|  181|  259|
+    |  9|        jacobiansPoseComposition_grp_fu_604_ACMP_fadd_10_U (jacobiansPoseComposition_grp_fu_604_ACMP_fadd_10)|      2|  181|  259|
+    | 10|        jacobiansPoseComposition_grp_fu_608_ACMP_fadd_11_U (jacobiansPoseComposition_grp_fu_608_ACMP_fadd_11)|      2|  181|  259|
+    | 11|        jacobiansPoseComposition_grp_fu_612_ACMP_fadd_12_U (jacobiansPoseComposition_grp_fu_612_ACMP_fadd_12)|      2|  181|  259|
+    | 12|        jacobiansPoseComposition_grp_fu_618_ACMP_fadd_13_U (jacobiansPoseComposition_grp_fu_618_ACMP_fadd_13)|      2|  181|  259|
+    | 13|        jacobiansPoseComposition_grp_fu_622_ACMP_fadd_14_U (jacobiansPoseComposition_grp_fu_622_ACMP_fadd_14)|      2|  181|  259|
+    | 14|        jacobiansPoseComposition_grp_fu_626_ACMP_fadd_15_U (jacobiansPoseComposition_grp_fu_626_ACMP_fadd_15)|      2|  181|  259|
+    | 15|        jacobiansPoseComposition_grp_fu_630_ACMP_fadd_16_U (jacobiansPoseComposition_grp_fu_630_ACMP_fadd_16)|      2|  181|  259|
+    | 16|        jacobiansPoseComposition_grp_fu_634_ACMP_fmul_17_U (jacobiansPoseComposition_grp_fu_634_ACMP_fmul_17)|      3|  143|  210|
+    | 17|        jacobiansPoseComposition_grp_fu_640_ACMP_fmul_18_U (jacobiansPoseComposition_grp_fu_640_ACMP_fmul_18)|      3|  143|  210|
+    | 18|        jacobiansPoseComposition_grp_fu_652_ACMP_fmul_19_U (jacobiansPoseComposition_grp_fu_652_ACMP_fmul_19)|      3|  143|  210|
+    | 19|        jacobiansPoseComposition_grp_fu_658_ACMP_fmul_20_U (jacobiansPoseComposition_grp_fu_658_ACMP_fmul_20)|      3|  143|  210|
+    | 20|        jacobiansPoseComposition_grp_fu_663_ACMP_fmul_21_U (jacobiansPoseComposition_grp_fu_663_ACMP_fmul_21)|      3|  143|  210|
+    | 21|        jacobiansPoseComposition_grp_fu_668_ACMP_fmul_22_U (jacobiansPoseComposition_grp_fu_668_ACMP_fmul_22)|      3|  143|  210|
+    | 22|        jacobiansPoseComposition_grp_fu_673_ACMP_fmul_23_U (jacobiansPoseComposition_grp_fu_673_ACMP_fmul_23)|      3|  143|  210|
+    | 23|        jacobiansPoseComposition_grp_fu_678_ACMP_fmul_24_U (jacobiansPoseComposition_grp_fu_678_ACMP_fmul_24)|      3|  143|  210|
+    | 24|        jacobiansPoseComposition_grp_fu_683_ACMP_fmul_25_U (jacobiansPoseComposition_grp_fu_683_ACMP_fmul_25)|      3|  143|  210|
+    | 25|        jacobiansPoseComposition_grp_fu_692_ACMP_fmul_26_U (jacobiansPoseComposition_grp_fu_692_ACMP_fmul_26)|      3|  143|  210|
+    | 26|        jacobiansPoseComposition_grp_fu_696_ACMP_fmul_27_U (jacobiansPoseComposition_grp_fu_696_ACMP_fmul_27)|      3|  143|  210|
+    | 27|        jacobiansPoseComposition_grp_fu_701_ACMP_fmul_28_U (jacobiansPoseComposition_grp_fu_701_ACMP_fmul_28)|      3|  143|  210|
+    | 28|        jacobiansPoseComposition_grp_fu_705_ACMP_fmul_29_U (jacobiansPoseComposition_grp_fu_705_ACMP_fmul_29)|      3|  143|  210|
+    | 29|        jacobiansPoseComposition_grp_fu_709_ACMP_fmul_30_U (jacobiansPoseComposition_grp_fu_709_ACMP_fmul_30)|      3|  143|  210|
+    | 30|        jacobiansPoseComposition_grp_fu_714_ACMP_fmul_31_U (jacobiansPoseComposition_grp_fu_714_ACMP_fmul_31)|      3|  143|  210|
+    | 31|        jacobiansPoseComposition_grp_fu_718_ACMP_fmul_32_U (jacobiansPoseComposition_grp_fu_718_ACMP_fmul_32)|      3|  143|  210|
+    | 32|        jacobiansPoseComposition_grp_fu_722_ACMP_fmul_33_U (jacobiansPoseComposition_grp_fu_722_ACMP_fmul_33)|      3|  143|  210|
+    | 33|        jacobiansPoseComposition_grp_fu_727_ACMP_fmul_34_U (jacobiansPoseComposition_grp_fu_727_ACMP_fmul_34)|      3|  143|  210|
+    | 34|        jacobiansPoseComposition_grp_fu_732_ACMP_fmul_35_U (jacobiansPoseComposition_grp_fu_732_ACMP_fmul_35)|      3|  143|  210|
+    | 35|        jacobiansPoseComposition_grp_fu_737_ACMP_fmul_36_U (jacobiansPoseComposition_grp_fu_737_ACMP_fmul_36)|      3|  143|  210|
+    | 36|        jacobiansPoseComposition_grp_fu_742_ACMP_fmul_37_U (jacobiansPoseComposition_grp_fu_742_ACMP_fmul_37)|      3|  143|  210|
+    | 37|        jacobiansPoseComposition_grp_fu_747_ACMP_fmul_38_U (jacobiansPoseComposition_grp_fu_747_ACMP_fmul_38)|      3|  143|  210|
+    | 38|        jacobiansPoseComposition_grp_fu_755_ACMP_fmul_39_U (jacobiansPoseComposition_grp_fu_755_ACMP_fmul_39)|      3|  143|  210|
+    | 39|        jacobiansPoseComposition_grp_fu_759_ACMP_fmul_40_U (jacobiansPoseComposition_grp_fu_759_ACMP_fmul_40)|      3|  143|  210|
+    | 40|        jacobiansPoseComposition_grp_fu_763_ACMP_fmul_41_U (jacobiansPoseComposition_grp_fu_763_ACMP_fmul_41)|      3|  143|  210|
+    | 41|        jacobiansPoseComposition_grp_fu_767_ACMP_fmul_42_U (jacobiansPoseComposition_grp_fu_767_ACMP_fmul_42)|      3|  143|  210|
+    | 42|        jacobiansPoseComposition_grp_fu_771_ACMP_fmul_43_U (jacobiansPoseComposition_grp_fu_771_ACMP_fmul_43)|      3|  143|  210|
+    | 43|        jacobiansPoseComposition_grp_fu_775_ACMP_fmul_44_U (jacobiansPoseComposition_grp_fu_775_ACMP_fmul_44)|      3|  143|  210|
+    | 44|        jacobiansPoseComposition_grp_fu_779_ACMP_fmul_45_U (jacobiansPoseComposition_grp_fu_779_ACMP_fmul_45)|      3|  143|  210|
+    | 45|        jacobiansPoseComposition_grp_fu_783_ACMP_fmul_46_U (jacobiansPoseComposition_grp_fu_783_ACMP_fmul_46)|      3|  143|  210|
+    | 46|        jacobiansPoseComposition_grp_fu_787_ACMP_fmul_47_U (jacobiansPoseComposition_grp_fu_787_ACMP_fmul_47)|      3|  143|  210|
+    | 47|        jacobiansPoseComposition_grp_fu_791_ACMP_fmul_48_U (jacobiansPoseComposition_grp_fu_791_ACMP_fmul_48)|      3|  143|  210|
+    +---+-------------------------------------------------------------------------------------------------------------+-------+-----+-----+
+    |  -|                                                                                                        Total|    128| 7472|10864|
+    +---+-------------------------------------------------------------------------------------------------------------+-------+-----+-----+
+
+    * Expression: 
+    +---+-----------------------+----+----+---+----+
+    | ID|                   Name|  P0|  P1| FF| LUT|
+    +---+-----------------------+----+----+---+----+
+    |  0|  i_1_fu_1646_p2 ( - ) |  32|  32|  0|  32|
+    |  1|    i_fu_1618_p2 ( - ) |  32|  32|  0|  32|
+    +---+-----------------------+----+----+---+----+
+    |  -|                  Total|  64|  64|  0|  64|
+    +---+-----------------------+----+----+---+----+
+
+    * FIFO: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * Multiplexer: 
+    +---+----------------+-----+-----+------+-----+
+    | ID|            Name| Size| Bits| Count|  LUT|
+    +---+----------------+-----+-----+------+-----+
+    |  0|       ap_NS_fsm|   80|    7|   560|  182|
+    |  1|  df_dx_address0|   14|    4|    56|   12|
+    |  2|  df_dx_address1|   14|    4|    56|   12|
+    |  3|        df_dx_d0|   10|   32|   320|   64|
+    |  4|        df_dx_d1|    8|   32|   256|   64|
+    |  5|   grp_fu_555_p0|   16|   32|   512|  160|
+    |  6|   grp_fu_555_p1|   13|   32|   416|   96|
+    |  7|   grp_fu_560_p0|   13|   32|   416|   96|
+    |  8|   grp_fu_560_p1|   14|   32|   448|   96|
+    |  9|   grp_fu_566_p0|    8|   32|   256|   64|
+    | 10|   grp_fu_566_p1|   11|   32|   352|   64|
+    | 11|   grp_fu_571_p0|    9|   32|   288|   64|
+    | 12|   grp_fu_571_p1|    8|   32|   256|   64|
+    | 13|   grp_fu_583_p0|    6|   32|   192|   32|
+    | 14|   grp_fu_583_p1|    7|   32|   224|   32|
+    | 15|   grp_fu_588_p0|    6|   32|   192|   32|
+    | 16|   grp_fu_588_p1|    7|   32|   224|   32|
+    | 17|   grp_fu_592_p0|    6|   32|   192|   32|
+    | 18|   grp_fu_592_p1|    6|   32|   192|   32|
+    | 19|   grp_fu_596_p0|    5|   32|   160|   32|
+    | 20|   grp_fu_596_p1|    7|   32|   224|   32|
+    | 21|   grp_fu_600_p0|    6|   32|   192|   32|
+    | 22|   grp_fu_600_p1|    7|   32|   224|   32|
+    | 23|   grp_fu_604_p0|    5|   32|   160|   32|
+    | 24|   grp_fu_604_p1|    6|   32|   192|   32|
+    | 25|   grp_fu_608_p0|    5|   32|   160|   32|
+    | 26|   grp_fu_608_p1|    6|   32|   192|   32|
+    | 27|   grp_fu_612_p0|    5|   32|   160|   32|
+    | 28|   grp_fu_612_p1|    6|   32|   192|   32|
+    | 29|   grp_fu_618_p0|    2|   32|    64|   32|
+    | 30|   grp_fu_618_p1|    2|   32|    64|   32|
+    | 31|   grp_fu_622_p0|    2|   32|    64|   32|
+    | 32|   grp_fu_622_p1|    2|   32|    64|   32|
+    | 33|   grp_fu_626_p0|    2|   32|    64|   32|
+    | 34|   grp_fu_626_p1|    2|   32|    64|   32|
+    | 35|   grp_fu_630_p0|    2|   32|    64|   32|
+    | 36|   grp_fu_630_p1|    2|   32|    64|   32|
+    | 37|   grp_fu_634_p0|   16|   32|   512|  160|
+    | 38|   grp_fu_634_p1|   21|   32|   672|  192|
+    | 39|   grp_fu_640_p0|   11|   32|   352|   64|
+    | 40|   grp_fu_640_p1|   13|   32|   416|   96|
+    | 41|   grp_fu_652_p0|   11|   32|   352|   64|
+    | 42|   grp_fu_652_p1|   11|   32|   352|   64|
+    | 43|   grp_fu_658_p0|    9|   32|   288|   64|
+    | 44|   grp_fu_658_p1|   10|   32|   320|   64|
+    | 45|   grp_fu_663_p0|   11|   32|   352|   64|
+    | 46|   grp_fu_663_p1|   11|   32|   352|   64|
+    | 47|   grp_fu_668_p0|   11|   32|   352|   64|
+    | 48|   grp_fu_668_p1|   12|   32|   384|   96|
+    | 49|   grp_fu_673_p0|   12|   32|   384|   96|
+    | 50|   grp_fu_673_p1|   12|   32|   384|   96|
+    | 51|   grp_fu_678_p0|    8|   32|   256|   64|
+    | 52|   grp_fu_678_p1|   12|   32|   384|   96|
+    | 53|   grp_fu_683_p0|   10|   32|   320|   64|
+    | 54|   grp_fu_683_p1|   12|   32|   384|   96|
+    | 55|   grp_fu_692_p0|   11|   32|   352|   64|
+    | 56|   grp_fu_692_p1|   10|   32|   320|   64|
+    | 57|   grp_fu_696_p0|   10|   32|   320|   64|
+    | 58|   grp_fu_696_p1|   10|   32|   320|   64|
+    | 59|   grp_fu_701_p0|   10|   32|   320|   64|
+    | 60|   grp_fu_701_p1|    9|   32|   288|   64|
+    | 61|   grp_fu_705_p0|   10|   32|   320|   64|
+    | 62|   grp_fu_705_p1|   10|   32|   320|   64|
+    | 63|   grp_fu_709_p0|    8|   32|   256|   64|
+    | 64|   grp_fu_709_p1|    8|   32|   256|   64|
+    | 65|   grp_fu_714_p0|    7|   32|   224|   32|
+    | 66|   grp_fu_714_p1|    7|   32|   224|   32|
+    | 67|   grp_fu_718_p0|    6|   32|   192|   32|
+    | 68|   grp_fu_718_p1|    6|   32|   192|   32|
+    | 69|   grp_fu_722_p0|    3|   32|    96|   32|
+    | 70|   grp_fu_722_p1|    3|   32|    96|   32|
+    | 71|   grp_fu_727_p0|    3|   32|    96|   32|
+    | 72|   grp_fu_727_p1|    3|   32|    96|   32|
+    | 73|   grp_fu_732_p0|    3|   32|    96|   32|
+    | 74|   grp_fu_732_p1|    3|   32|    96|   32|
+    | 75|   grp_fu_737_p0|    3|   32|    96|   32|
+    | 76|   grp_fu_737_p1|    3|   32|    96|   32|
+    | 77|   grp_fu_742_p0|    3|   32|    96|   32|
+    | 78|   grp_fu_742_p1|    3|   32|    96|   32|
+    | 79|   grp_fu_747_p0|    3|   32|    96|   32|
+    | 80|   grp_fu_747_p1|    3|   32|    96|   32|
+    | 81|   grp_fu_755_p0|    2|   32|    64|   32|
+    | 82|   grp_fu_755_p1|    2|   32|    64|   32|
+    | 83|   grp_fu_759_p0|    2|   32|    64|   32|
+    | 84|   grp_fu_759_p1|    2|   32|    64|   32|
+    | 85|   grp_fu_763_p0|    2|   32|    64|   32|
+    | 86|   grp_fu_763_p1|    2|   32|    64|   32|
+    | 87|   grp_fu_767_p0|    2|   32|    64|   32|
+    | 88|   grp_fu_767_p1|    2|   32|    64|   32|
+    | 89|   grp_fu_771_p0|    2|   32|    64|   32|
+    | 90|   grp_fu_771_p1|    2|   32|    64|   32|
+    +---+----------------+-----+-----+------+-----+
+    |  -|           Total|  721| 2831| 20288| 4846|
+    +---+----------------+-----+-----+------+-----+
+
+    * Register: 
+    +---+----------------------+-----+-------+----+
+    | ID|                  Name| Bits| Consts|  FF|
+    +---+----------------------+-----+-------+----+
+    |  0|  X_plus_U_qz_reg_1782|   32|      0|  32|
+    |  1|             ap_CS_fsm|    7|      0|   7|
+    |  2|              reg_1006|   32|      0|  32|
+    |  3|              reg_1013|   32|      0|  32|
+    |  4|              reg_1019|   32|      0|  32|
+    |  5|              reg_1038|   32|      0|  32|
+    |  6|              reg_1047|   32|      0|  32|
+    |  7|              reg_1057|   32|      0|  32|
+    |  8|              reg_1072|   32|      0|  32|
+    |  9|              reg_1085|   32|      0|  32|
+    | 10|              reg_1098|   32|      0|  32|
+    | 11|              reg_1110|   32|      0|  32|
+    | 12|              reg_1123|   32|      0|  32|
+    | 13|              reg_1136|   32|      0|  32|
+    | 14|              reg_1144|   32|      0|  32|
+    | 15|              reg_1152|   32|      0|  32|
+    | 16|              reg_1157|   32|      0|  32|
+    | 17|              reg_1167|   32|      0|  32|
+    | 18|              reg_1178|   32|      0|  32|
+    | 19|              reg_1186|   32|      0|  32|
+    | 20|              reg_1194|   32|      0|  32|
+    | 21|              reg_1201|   32|      0|  32|
+    | 22|              reg_1212|   32|      0|  32|
+    | 23|              reg_1220|   32|      0|  32|
+    | 24|              reg_1231|   32|      0|  32|
+    | 25|              reg_1242|   32|      0|  32|
+    | 26|              reg_1252|   32|      0|  32|
+    | 27|              reg_1261|   32|      0|  32|
+    | 28|              reg_1270|   32|      0|  32|
+    | 29|              reg_1277|   32|      0|  32|
+    | 30|              reg_1284|   32|      0|  32|
+    | 31|              reg_1291|   32|      0|  32|
+    | 32|              reg_1299|   32|      0|  32|
+    | 33|              reg_1307|   32|      0|  32|
+    | 34|              reg_1315|   32|      0|  32|
+    | 35|              reg_1325|   32|      0|  32|
+    | 36|              reg_1335|   32|      0|  32|
+    | 37|              reg_1345|   32|      0|  32|
+    | 38|              reg_1355|   32|      0|  32|
+    | 39|              reg_1365|   32|      0|  32|
+    | 40|              reg_1375|   32|      0|  32|
+    | 41|              reg_1383|   32|      0|  32|
+    | 42|              reg_1394|   32|      0|  32|
+    | 43|              reg_1403|   32|      0|  32|
+    | 44|              reg_1414|   32|      0|  32|
+    | 45|              reg_1425|   32|      0|  32|
+    | 46|              reg_1435|   32|      0|  32|
+    | 47|              reg_1444|   32|      0|  32|
+    | 48|              reg_1454|   32|      0|  32|
+    | 49|              reg_1460|   32|      0|  32|
+    | 50|              reg_1467|   32|      0|  32|
+    | 51|              reg_1473|   32|      0|  32|
+    | 52|              reg_1479|   32|      0|  32|
+    | 53|              reg_1485|   32|      0|  32|
+    | 54|              reg_1491|   32|      0|  32|
+    | 55|              reg_1497|   32|      0|  32|
+    | 56|              reg_1503|   32|      0|  32|
+    | 57|              reg_1509|   32|      0|  32|
+    | 58|              reg_1515|   32|      0|  32|
+    | 59|              reg_1521|   32|      0|  32|
+    | 60|              reg_1530|   32|      0|  32|
+    | 61|              reg_1536|   32|      0|  32|
+    | 62|              reg_1542|   32|      0|  32|
+    | 63|              reg_1547|   32|      0|  32|
+    | 64|              reg_1552|   32|      0|  32|
+    | 65|              reg_1557|   32|      0|  32|
+    | 66|              reg_1562|   32|      0|  32|
+    | 67|              reg_1567|   32|      0|  32|
+    | 68|              reg_1572|   32|      0|  32|
+    | 69|              reg_1577|   32|      0|  32|
+    | 70|              reg_1583|   32|      0|  32|
+    | 71|              reg_1589|   32|      0|  32|
+    | 72|              reg_1595|   32|      0|  32|
+    | 73|               reg_795|   32|      0|  32|
+    | 74|               reg_829|   32|      0|  32|
+    | 75|               reg_850|   32|      0|  32|
+    | 76|               reg_869|   32|      0|  32|
+    | 77|               reg_889|   32|      0|  32|
+    | 78|               reg_903|   32|      0|  32|
+    | 79|               reg_931|   32|      0|  32|
+    | 80|               reg_943|   32|      0|  32|
+    | 81|               reg_954|   32|      0|  32|
+    | 82|               reg_961|   32|      0|  32|
+    | 83|               reg_976|   32|      0|  32|
+    | 84|               reg_983|   32|      0|  32|
+    | 85|               reg_990|   32|      0|  32|
+    | 86|               reg_999|   32|      0|  32|
+    | 87|      tmp1_i1_reg_1804|   32|      0|  32|
+    | 88|       tmp1_i_reg_1838|   32|      0|  32|
+    | 89|      tmp_163_reg_1876|   32|      0|  32|
+    | 90|      tmp_169_reg_1881|   32|      0|  32|
+    | 91|      tmp_239_reg_1902|   32|      0|  32|
+    | 92|      tmp_253_reg_1907|   32|      0|  32|
+    | 93|       tmp_27_reg_1869|   32|      0|  32|
+    | 94|      tmp_281_reg_1912|   32|      0|  32|
+    | 95|      tmp_324_reg_1917|   32|      0|  32|
+    | 96|      tmp_330_reg_1922|   32|      0|  32|
+    | 97|      tmp_331_reg_1927|   32|      0|  32|
+    | 98|      tmp_337_reg_1932|   32|      0|  32|
+    | 99|      tmp_338_reg_1937|   32|      0|  32|
+    |100|       tmp_42_reg_1886|   32|      0|  32|
+    |101|       tmp_43_reg_1894|   32|      0|  32|
+    |102|       tmp_48_reg_1776|   32|      0|  32|
+    |103|        tmp_4_reg_1793|   32|      0|  32|
+    |104|       tmp_52_reg_1809|   31|      0|  31|
+    |105|       tmp_53_reg_1799|   31|      0|  31|
+    |106|          tmp_reg_1756|   32|      0|  32|
+    +---+----------------------+-----+-------+----+
+    |  -|                 Total| 3397|      0|3397|
+    +---+----------------------+-----+-------+----+
+
+* Hierarchical Multiplexer Count: 
++---+-------------------------------------------------------------------------------------------------------------+-----+------+-------+
+| ID|                                                                                                         Name| Size|  Bits|  Count|
++---+-------------------------------------------------------------------------------------------------------------+-----+------+-------+
+|  0|                                                                                                 (This level)|  721|  2831|  20288|
+|  1|  jacobiansPoseComposition_grp_fu_555_ACMP_faddfsub_1_U (jacobiansPoseComposition_grp_fu_555_ACMP_faddfsub_1)|    -|     -|      0|
+|  2|  jacobiansPoseComposition_grp_fu_560_ACMP_faddfsub_2_U (jacobiansPoseComposition_grp_fu_560_ACMP_faddfsub_2)|    -|     -|      0|
+|  3|  jacobiansPoseComposition_grp_fu_566_ACMP_faddfsub_3_U (jacobiansPoseComposition_grp_fu_566_ACMP_faddfsub_3)|    -|     -|      0|
+|  4|  jacobiansPoseComposition_grp_fu_571_ACMP_faddfsub_4_U (jacobiansPoseComposition_grp_fu_571_ACMP_faddfsub_4)|    -|     -|      0|
+|  5|  jacobiansPoseComposition_grp_fu_583_ACMP_faddfsub_5_U (jacobiansPoseComposition_grp_fu_583_ACMP_faddfsub_5)|    -|     -|      0|
+|  6|  jacobiansPoseComposition_grp_fu_588_ACMP_faddfsub_6_U (jacobiansPoseComposition_grp_fu_588_ACMP_faddfsub_6)|    -|     -|      0|
+|  7|          jacobiansPoseComposition_grp_fu_592_ACMP_fadd_7_U (jacobiansPoseComposition_grp_fu_592_ACMP_fadd_7)|    -|     -|      0|
+|  8|          jacobiansPoseComposition_grp_fu_596_ACMP_fadd_8_U (jacobiansPoseComposition_grp_fu_596_ACMP_fadd_8)|    -|     -|      0|
+|  9|          jacobiansPoseComposition_grp_fu_600_ACMP_fadd_9_U (jacobiansPoseComposition_grp_fu_600_ACMP_fadd_9)|    -|     -|      0|
+| 10|        jacobiansPoseComposition_grp_fu_604_ACMP_fadd_10_U (jacobiansPoseComposition_grp_fu_604_ACMP_fadd_10)|    -|     -|      0|
+| 11|        jacobiansPoseComposition_grp_fu_608_ACMP_fadd_11_U (jacobiansPoseComposition_grp_fu_608_ACMP_fadd_11)|    -|     -|      0|
+| 12|        jacobiansPoseComposition_grp_fu_612_ACMP_fadd_12_U (jacobiansPoseComposition_grp_fu_612_ACMP_fadd_12)|    -|     -|      0|
+| 13|        jacobiansPoseComposition_grp_fu_618_ACMP_fadd_13_U (jacobiansPoseComposition_grp_fu_618_ACMP_fadd_13)|    -|     -|      0|
+| 14|        jacobiansPoseComposition_grp_fu_622_ACMP_fadd_14_U (jacobiansPoseComposition_grp_fu_622_ACMP_fadd_14)|    -|     -|      0|
+| 15|        jacobiansPoseComposition_grp_fu_626_ACMP_fadd_15_U (jacobiansPoseComposition_grp_fu_626_ACMP_fadd_15)|    -|     -|      0|
+| 16|        jacobiansPoseComposition_grp_fu_630_ACMP_fadd_16_U (jacobiansPoseComposition_grp_fu_630_ACMP_fadd_16)|    -|     -|      0|
+| 17|        jacobiansPoseComposition_grp_fu_634_ACMP_fmul_17_U (jacobiansPoseComposition_grp_fu_634_ACMP_fmul_17)|    -|     -|      0|
+| 18|        jacobiansPoseComposition_grp_fu_640_ACMP_fmul_18_U (jacobiansPoseComposition_grp_fu_640_ACMP_fmul_18)|    -|     -|      0|
+| 19|        jacobiansPoseComposition_grp_fu_652_ACMP_fmul_19_U (jacobiansPoseComposition_grp_fu_652_ACMP_fmul_19)|    -|     -|      0|
+| 20|        jacobiansPoseComposition_grp_fu_658_ACMP_fmul_20_U (jacobiansPoseComposition_grp_fu_658_ACMP_fmul_20)|    -|     -|      0|
+| 21|        jacobiansPoseComposition_grp_fu_663_ACMP_fmul_21_U (jacobiansPoseComposition_grp_fu_663_ACMP_fmul_21)|    -|     -|      0|
+| 22|        jacobiansPoseComposition_grp_fu_668_ACMP_fmul_22_U (jacobiansPoseComposition_grp_fu_668_ACMP_fmul_22)|    -|     -|      0|
+| 23|        jacobiansPoseComposition_grp_fu_673_ACMP_fmul_23_U (jacobiansPoseComposition_grp_fu_673_ACMP_fmul_23)|    -|     -|      0|
+| 24|        jacobiansPoseComposition_grp_fu_678_ACMP_fmul_24_U (jacobiansPoseComposition_grp_fu_678_ACMP_fmul_24)|    -|     -|      0|
+| 25|        jacobiansPoseComposition_grp_fu_683_ACMP_fmul_25_U (jacobiansPoseComposition_grp_fu_683_ACMP_fmul_25)|    -|     -|      0|
+| 26|        jacobiansPoseComposition_grp_fu_692_ACMP_fmul_26_U (jacobiansPoseComposition_grp_fu_692_ACMP_fmul_26)|    -|     -|      0|
+| 27|        jacobiansPoseComposition_grp_fu_696_ACMP_fmul_27_U (jacobiansPoseComposition_grp_fu_696_ACMP_fmul_27)|    -|     -|      0|
+| 28|        jacobiansPoseComposition_grp_fu_701_ACMP_fmul_28_U (jacobiansPoseComposition_grp_fu_701_ACMP_fmul_28)|    -|     -|      0|
+| 29|        jacobiansPoseComposition_grp_fu_705_ACMP_fmul_29_U (jacobiansPoseComposition_grp_fu_705_ACMP_fmul_29)|    -|     -|      0|
+| 30|        jacobiansPoseComposition_grp_fu_709_ACMP_fmul_30_U (jacobiansPoseComposition_grp_fu_709_ACMP_fmul_30)|    -|     -|      0|
+| 31|        jacobiansPoseComposition_grp_fu_714_ACMP_fmul_31_U (jacobiansPoseComposition_grp_fu_714_ACMP_fmul_31)|    -|     -|      0|
+| 32|        jacobiansPoseComposition_grp_fu_718_ACMP_fmul_32_U (jacobiansPoseComposition_grp_fu_718_ACMP_fmul_32)|    -|     -|      0|
+| 33|        jacobiansPoseComposition_grp_fu_722_ACMP_fmul_33_U (jacobiansPoseComposition_grp_fu_722_ACMP_fmul_33)|    -|     -|      0|
+| 34|        jacobiansPoseComposition_grp_fu_727_ACMP_fmul_34_U (jacobiansPoseComposition_grp_fu_727_ACMP_fmul_34)|    -|     -|      0|
+| 35|        jacobiansPoseComposition_grp_fu_732_ACMP_fmul_35_U (jacobiansPoseComposition_grp_fu_732_ACMP_fmul_35)|    -|     -|      0|
+| 36|        jacobiansPoseComposition_grp_fu_737_ACMP_fmul_36_U (jacobiansPoseComposition_grp_fu_737_ACMP_fmul_36)|    -|     -|      0|
+| 37|        jacobiansPoseComposition_grp_fu_742_ACMP_fmul_37_U (jacobiansPoseComposition_grp_fu_742_ACMP_fmul_37)|    -|     -|      0|
+| 38|        jacobiansPoseComposition_grp_fu_747_ACMP_fmul_38_U (jacobiansPoseComposition_grp_fu_747_ACMP_fmul_38)|    -|     -|      0|
+| 39|        jacobiansPoseComposition_grp_fu_755_ACMP_fmul_39_U (jacobiansPoseComposition_grp_fu_755_ACMP_fmul_39)|    -|     -|      0|
+| 40|        jacobiansPoseComposition_grp_fu_759_ACMP_fmul_40_U (jacobiansPoseComposition_grp_fu_759_ACMP_fmul_40)|    -|     -|      0|
+| 41|        jacobiansPoseComposition_grp_fu_763_ACMP_fmul_41_U (jacobiansPoseComposition_grp_fu_763_ACMP_fmul_41)|    -|     -|      0|
+| 42|        jacobiansPoseComposition_grp_fu_767_ACMP_fmul_42_U (jacobiansPoseComposition_grp_fu_767_ACMP_fmul_42)|    -|     -|      0|
+| 43|        jacobiansPoseComposition_grp_fu_771_ACMP_fmul_43_U (jacobiansPoseComposition_grp_fu_771_ACMP_fmul_43)|    -|     -|      0|
+| 44|        jacobiansPoseComposition_grp_fu_775_ACMP_fmul_44_U (jacobiansPoseComposition_grp_fu_775_ACMP_fmul_44)|    -|     -|      0|
+| 45|        jacobiansPoseComposition_grp_fu_779_ACMP_fmul_45_U (jacobiansPoseComposition_grp_fu_779_ACMP_fmul_45)|    -|     -|      0|
+| 46|        jacobiansPoseComposition_grp_fu_783_ACMP_fmul_46_U (jacobiansPoseComposition_grp_fu_783_ACMP_fmul_46)|    -|     -|      0|
+| 47|        jacobiansPoseComposition_grp_fu_787_ACMP_fmul_47_U (jacobiansPoseComposition_grp_fu_787_ACMP_fmul_47)|    -|     -|      0|
+| 48|        jacobiansPoseComposition_grp_fu_791_ACMP_fmul_48_U (jacobiansPoseComposition_grp_fu_791_ACMP_fmul_48)|    -|     -|      0|
++---+-------------------------------------------------------------------------------------------------------------+-----+------+-------+
+|  -|                                                                                                        Total|  721|  2831|  20288|
++---+-------------------------------------------------------------------------------------------------------------+-----+------+-------+
+
+
+
+================================================================
+== Power Estimate
+================================================================
+* Summary: 
++---+-------------+------+
+| ID|         Name| Power|
++---+-------------+------+
+|  0|    Component|  1845|
+|  1|   Expression|     6|
+|  2|         FIFO|     -|
+|  3|       Memory|     -|
+|  4|  Multiplexer|   484|
+|  5|     Register|   339|
++---+-------------+------+
+|  -|        Total|  2674|
++---+-------------+------+
+
+* Hierarchical Register Count: 
++---+--------------+------+
+| ID|          Name| Count|
++---+--------------+------+
+|  0|  (This level)|  3397|
++---+--------------+------+
+|  -|         Total|  3397|
++---+--------------+------+
+
+
+
+================================================================
+== Interface Summary
+================================================================
+* Interfaces: 
++---+---------------------------+--------------------------+--------------+------+------------+----------+-----+-----+
+| ID|                  RTL Ports|                    Object|          Type| Scope| IO Protocol| IO Config|  Dir| Bits|
++---+---------------------------+--------------------------+--------------+------+------------+----------+-----+-----+
+|  0|                     ap_clk|  jacobiansPoseComposition|  return value|     -|  ap_ctrl_hs|         -|   in|    1|
+|  1|                     ap_rst|                         -|             -|     -|           -|         -|   in|    1|
+|  2|                   ap_start|                         -|             -|     -|           -|         -|   in|    1|
+|  3|                    ap_done|                         -|             -|     -|           -|         -|  out|    1|
+|  4|                    ap_idle|                         -|             -|     -|           -|         -|  out|    1|
+|  5|                        X_x|                       X_x|        scalar|     -|     ap_none|         -|   in|   32|
+|  6|                        X_y|                       X_y|        scalar|     -|     ap_none|         -|   in|   32|
+|  7|                        X_z|                       X_z|        scalar|     -|     ap_none|         -|   in|   32|
+|  8|                       X_qr|                      X_qr|        scalar|     -|     ap_none|         -|   in|   32|
+|  9|                       X_qx|                      X_qx|        scalar|     -|     ap_none|         -|   in|   32|
+| 10|                       X_qy|                      X_qy|        scalar|     -|     ap_none|         -|   in|   32|
+| 11|                       X_qz|                      X_qz|        scalar|     -|     ap_none|         -|   in|   32|
+| 12|                        U_x|                       U_x|        scalar|     -|     ap_none|         -|   in|   32|
+| 13|                        U_y|                       U_y|        scalar|     -|     ap_none|         -|   in|   32|
+| 14|                        U_z|                       U_z|        scalar|     -|     ap_none|         -|   in|   32|
+| 15|                       U_qr|                      U_qr|        scalar|     -|     ap_none|         -|   in|   32|
+| 16|                       U_qx|                      U_qx|        scalar|     -|     ap_none|         -|   in|   32|
+| 17|                       U_qy|                      U_qy|        scalar|     -|     ap_none|         -|   in|   32|
+| 18|                       U_qz|                      U_qz|        scalar|     -|     ap_none|         -|   in|   32|
+| 19|             df_dx_address0|                     df_dx|         array|     -|   ap_memory|         -|  out|    5|
+| 20|                  df_dx_ce0|                         -|             -|     -|           -|         -|  out|    1|
+| 21|                  df_dx_we0|                         -|             -|     -|           -|         -|  out|    1|
+| 22|                   df_dx_d0|                         -|             -|     -|           -|         -|  out|   32|
+| 23|                   df_dx_q0|                         -|             -|     -|           -|         -|   in|   32|
+| 24|             df_dx_address1|                         -|             -|     -|           -|         -|  out|    5|
+| 25|                  df_dx_ce1|                         -|             -|     -|           -|         -|  out|    1|
+| 26|                  df_dx_we1|                         -|             -|     -|           -|         -|  out|    1|
+| 27|                   df_dx_d1|                         -|             -|     -|           -|         -|  out|   32|
+| 28|                   df_dx_q1|                         -|             -|     -|           -|         -|   in|   32|
+| 29|   out_X_oplus_U_x_address0|           out_X_oplus_U_x|         array|     -|   ap_memory|         -|  out|    1|
+| 30|        out_X_oplus_U_x_ce0|                         -|             -|     -|           -|         -|  out|    1|
+| 31|        out_X_oplus_U_x_we0|                         -|             -|     -|           -|         -|  out|    1|
+| 32|         out_X_oplus_U_x_d0|                         -|             -|     -|           -|         -|  out|   32|
+| 33|         out_X_oplus_U_x_q0|                         -|             -|     -|           -|         -|   in|   32|
+| 34|   out_X_oplus_U_x_address1|                         -|             -|     -|           -|         -|  out|    1|
+| 35|        out_X_oplus_U_x_ce1|                         -|             -|     -|           -|         -|  out|    1|
+| 36|        out_X_oplus_U_x_we1|                         -|             -|     -|           -|         -|  out|    1|
+| 37|         out_X_oplus_U_x_d1|                         -|             -|     -|           -|         -|  out|   32|
+| 38|         out_X_oplus_U_x_q1|                         -|             -|     -|           -|         -|   in|   32|
+| 39|   out_X_oplus_U_y_address0|           out_X_oplus_U_y|         array|     -|   ap_memory|         -|  out|    1|
+| 40|        out_X_oplus_U_y_ce0|                         -|             -|     -|           -|         -|  out|    1|
+| 41|        out_X_oplus_U_y_we0|                         -|             -|     -|           -|         -|  out|    1|
+| 42|         out_X_oplus_U_y_d0|                         -|             -|     -|           -|         -|  out|   32|
+| 43|         out_X_oplus_U_y_q0|                         -|             -|     -|           -|         -|   in|   32|
+| 44|   out_X_oplus_U_y_address1|                         -|             -|     -|           -|         -|  out|    1|
+| 45|        out_X_oplus_U_y_ce1|                         -|             -|     -|           -|         -|  out|    1|
+| 46|        out_X_oplus_U_y_we1|                         -|             -|     -|           -|         -|  out|    1|
+| 47|         out_X_oplus_U_y_d1|                         -|             -|     -|           -|         -|  out|   32|
+| 48|         out_X_oplus_U_y_q1|                         -|             -|     -|           -|         -|   in|   32|
+| 49|   out_X_oplus_U_z_address0|           out_X_oplus_U_z|         array|     -|   ap_memory|         -|  out|    1|
+| 50|        out_X_oplus_U_z_ce0|                         -|             -|     -|           -|         -|  out|    1|
+| 51|        out_X_oplus_U_z_we0|                         -|             -|     -|           -|         -|  out|    1|
+| 52|         out_X_oplus_U_z_d0|                         -|             -|     -|           -|         -|  out|   32|
+| 53|         out_X_oplus_U_z_q0|                         -|             -|     -|           -|         -|   in|   32|
+| 54|   out_X_oplus_U_z_address1|                         -|             -|     -|           -|         -|  out|    1|
+| 55|        out_X_oplus_U_z_ce1|                         -|             -|     -|           -|         -|  out|    1|
+| 56|        out_X_oplus_U_z_we1|                         -|             -|     -|           -|         -|  out|    1|
+| 57|         out_X_oplus_U_z_d1|                         -|             -|     -|           -|         -|  out|   32|
+| 58|         out_X_oplus_U_z_q1|                         -|             -|     -|           -|         -|   in|   32|
+| 59|  out_X_oplus_U_qr_address0|          out_X_oplus_U_qr|         array|     -|   ap_memory|         -|  out|    1|
+| 60|       out_X_oplus_U_qr_ce0|                         -|             -|     -|           -|         -|  out|    1|
+| 61|       out_X_oplus_U_qr_we0|                         -|             -|     -|           -|         -|  out|    1|
+| 62|        out_X_oplus_U_qr_d0|                         -|             -|     -|           -|         -|  out|   32|
+| 63|        out_X_oplus_U_qr_q0|                         -|             -|     -|           -|         -|   in|   32|
+| 64|  out_X_oplus_U_qr_address1|                         -|             -|     -|           -|         -|  out|    1|
+| 65|       out_X_oplus_U_qr_ce1|                         -|             -|     -|           -|         -|  out|    1|
+| 66|       out_X_oplus_U_qr_we1|                         -|             -|     -|           -|         -|  out|    1|
+| 67|        out_X_oplus_U_qr_d1|                         -|             -|     -|           -|         -|  out|   32|
+| 68|        out_X_oplus_U_qr_q1|                         -|             -|     -|           -|         -|   in|   32|
+| 69|  out_X_oplus_U_qx_address0|          out_X_oplus_U_qx|         array|     -|   ap_memory|         -|  out|    1|
+| 70|       out_X_oplus_U_qx_ce0|                         -|             -|     -|           -|         -|  out|    1|
+| 71|       out_X_oplus_U_qx_we0|                         -|             -|     -|           -|         -|  out|    1|
+| 72|        out_X_oplus_U_qx_d0|                         -|             -|     -|           -|         -|  out|   32|
+| 73|        out_X_oplus_U_qx_q0|                         -|             -|     -|           -|         -|   in|   32|
+| 74|  out_X_oplus_U_qx_address1|                         -|             -|     -|           -|         -|  out|    1|
+| 75|       out_X_oplus_U_qx_ce1|                         -|             -|     -|           -|         -|  out|    1|
+| 76|       out_X_oplus_U_qx_we1|                         -|             -|     -|           -|         -|  out|    1|
+| 77|        out_X_oplus_U_qx_d1|                         -|             -|     -|           -|         -|  out|   32|
+| 78|        out_X_oplus_U_qx_q1|                         -|             -|     -|           -|         -|   in|   32|
+| 79|  out_X_oplus_U_qy_address0|          out_X_oplus_U_qy|         array|     -|   ap_memory|         -|  out|    1|
+| 80|       out_X_oplus_U_qy_ce0|                         -|             -|     -|           -|         -|  out|    1|
+| 81|       out_X_oplus_U_qy_we0|                         -|             -|     -|           -|         -|  out|    1|
+| 82|        out_X_oplus_U_qy_d0|                         -|             -|     -|           -|         -|  out|   32|
+| 83|        out_X_oplus_U_qy_q0|                         -|             -|     -|           -|         -|   in|   32|
+| 84|  out_X_oplus_U_qy_address1|                         -|             -|     -|           -|         -|  out|    1|
+| 85|       out_X_oplus_U_qy_ce1|                         -|             -|     -|           -|         -|  out|    1|
+| 86|       out_X_oplus_U_qy_we1|                         -|             -|     -|           -|         -|  out|    1|
+| 87|        out_X_oplus_U_qy_d1|                         -|             -|     -|           -|         -|  out|   32|
+| 88|        out_X_oplus_U_qy_q1|                         -|             -|     -|           -|         -|   in|   32|
+| 89|  out_X_oplus_U_qz_address0|          out_X_oplus_U_qz|         array|     -|   ap_memory|         -|  out|    1|
+| 90|       out_X_oplus_U_qz_ce0|                         -|             -|     -|           -|         -|  out|    1|
+| 91|       out_X_oplus_U_qz_we0|                         -|             -|     -|           -|         -|  out|    1|
+| 92|        out_X_oplus_U_qz_d0|                         -|             -|     -|           -|         -|  out|   32|
+| 93|        out_X_oplus_U_qz_q0|                         -|             -|     -|           -|         -|   in|   32|
+| 94|  out_X_oplus_U_qz_address1|                         -|             -|     -|           -|         -|  out|    1|
+| 95|       out_X_oplus_U_qz_ce1|                         -|             -|     -|           -|         -|  out|    1|
+| 96|       out_X_oplus_U_qz_we1|                         -|             -|     -|           -|         -|  out|    1|
+| 97|        out_X_oplus_U_qz_d1|                         -|             -|     -|           -|         -|  out|   32|
+| 98|        out_X_oplus_U_qz_q1|                         -|             -|     -|           -|         -|   in|   32|
++---+---------------------------+--------------------------+--------------+------+------------+----------+-----+-----+
+
